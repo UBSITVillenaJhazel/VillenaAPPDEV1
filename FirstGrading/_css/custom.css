@@ -1,11 +1,11 @@
 body{
     box-sizing: content-box;
 }
-/*.col{
+.col{
     border:1px solid skyblue;
 }.row{
     height:100px;
-}*/
+}
 
 /*Small devices (landscape phones, 576px and up) */
 @media (min-width:576px){
