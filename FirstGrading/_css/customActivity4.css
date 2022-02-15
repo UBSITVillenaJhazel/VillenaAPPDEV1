@@ -32,7 +32,7 @@ article{
 @media (min-width:768px){
     body
     {
-        background-color:black;
+        background-color:navajowhite
     }
 }
 
@@ -40,7 +40,7 @@ article{
 @media (min-width:992px){
     body
     {
-        background-color:dimgray
+        background-color:wheat;
     }
 }
 
@@ -48,7 +48,7 @@ article{
 @media (min-width:1200px){
     body
     {
-        background-color:darkslategray;
+        background-color:turquoise
     }
 }
 
@@ -56,6 +56,6 @@ article{
 @media (min-width:1400px){
     body
     {
-        background-color: gray;
+        background-color:skyblue;
     }
 }
