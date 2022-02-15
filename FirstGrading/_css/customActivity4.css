@@ -1,0 +1,61 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: content-box;
+    text-align: center;
+}
+.col{
+    border:2px solid darkslateblue;
+    margin: 10px;
+}.row{
+    border:1px solid lightskyblue;
+    height:100px;
+}
+.row2{
+    border:2px solid darksalmon;
+    height:550px;
+    padding: 13px;
+}
+article{
+    border:2px solid greenyellow;
+}section{
+    height: 145px;
+}
+/*Small devices (landscape phones, 576px and up) */
+@media (min-width:576px){
+    body
+    {
+        background-color: whitesmoke;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width:768px){
+    body
+    {
+        background-color:black;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width:992px){
+    body
+    {
+        background-color:dimgray
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width:1200px){
+    body
+    {
+        background-color:darkslategray;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width:1400px){
+    body
+    {
+        background-color: gray;
+    }
+}
