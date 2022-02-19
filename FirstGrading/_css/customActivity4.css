@@ -4,26 +4,14 @@ body{
     text-align: center;
 }
 .col{
-    border:2px solid darkslateblue;
     margin: 10px;
-}.row{
-    border:1px solid lightskyblue;
 }
 .row2{
-    border:2px solid darksalmon;
-    height:550px;
     padding: 13px;
-}
-article{
-    border:2px solid greenyellow;
-}section{
-    height: 145px;
+    margin-top: 20px;
 }
 .col-8{
     width:950px;
-}
-.row1{
-    height: 300px;
 }
 /*Small devices (landscape phones, 576px and up) */
 @media (min-width:576px){
