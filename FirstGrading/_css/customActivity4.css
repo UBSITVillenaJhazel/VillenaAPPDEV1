@@ -8,7 +8,6 @@ body{
     margin: 10px;
 }.row{
     border:1px solid lightskyblue;
-    height:100px;
 }
 .row2{
     border:2px solid darksalmon;
@@ -19,6 +18,12 @@ article{
     border:2px solid greenyellow;
 }section{
     height: 145px;
+}
+.col-8{
+    width:950px;
+}
+.row1{
+    height: 300px;
 }
 /*Small devices (landscape phones, 576px and up) */
 @media (min-width:576px){
@@ -48,7 +53,7 @@ article{
 @media (min-width:1200px){
     body
     {
-        background-color:turquoise
+        background-color:cornsilk;
     }
 }
 
@@ -56,6 +61,6 @@ article{
 @media (min-width:1400px){
     body
     {
-        background-color:skyblue;
+        background-color:blanchedalmond;
     }
 }
