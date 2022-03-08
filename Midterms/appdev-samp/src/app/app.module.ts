@@ -7,6 +7,7 @@ import { ArticlesComponent } from './articles/articles.component';
 import { ContactsInfoComponent } from './contacts-info/contacts-info.component';
 import { CourseInfoComponent } from './course-info/course-info.component';
 import { NaviComponent } from './navi/navi.component';
+import { CourseListComponent } from './course-list/course-list.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NaviComponent } from './navi/navi.component';
     ArticlesComponent,
     ContactsInfoComponent,
     CourseInfoComponent,
-    NaviComponent
+    NaviComponent,
+    CourseListComponent
   ],
   imports: [
     BrowserModule,
