@@ -17,3 +17,77 @@
       <p class="card-text">This program is a mix of computer science and electronic engineering. Under this program, students are trained with the handling of hardware and software for digital devices, designing and developing computers, and maintaining them.</p>
     </div>
 </div>
+<!--
+<div>
+<ul class='list-group'>
+  <li *ngFor="let students1 of students">
+    {{students1.value}}
+</ul>
+</div>
+<div>
+<a class="btn btn-primary btn-lg" href="a" role="button">Learn More</a>
+</div>
+
+<label>Add Student:
+  <input #studentInput>{{studentInput.value}}
+</label>
+</div>-->
+
+<div class="mb-3">
+  <a class="btn btn-primary btn-lg" href="a" role="button">Learn More</a>
+</div>
+
+<div class="input-group mb-3">
+  <input #studentInput{{studentInput.value}} type="text" class="form-control" placeholder="Student Name" aria-label="Add Student" aria-describedby="button-addon2">
+  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+</div>
+
+<div>
+<h2>Student List:</h2>
+  <table class="table-light">
+    <thead>
+      <tr>
+        <th scope="col">Course</th>
+        <th scope="col">ID Number</th>
+        <th scope="col">Name</th>
+        <th scope="col">Date Added</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{student.course}}</td>
+        <td>{{student.idNumber}}</td>
+        <td>{{student.name}}</td>
+        <td>{{student.dateAdded}}</td>
+        <td>
+          <button type="button" class="btn btn-success">View</button>
+          <button type="button" class="btn btn-warning">Edit</button>
+          <button type="button" class="btn btn-danger">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>{{student1.course}}</td>
+        <td>{{student1.idNumber}}</td>
+        <td>{{student1.name}}</td>
+        <td>{{student1.dateAdded}}</td>
+        <td>
+          <button type="button" class="btn btn-success">View</button>
+          <button type="button" class="btn btn-warning">Edit</button>
+          <button type="button" class="btn btn-danger">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>{{student2.course}}</td>
+        <td>{{student2.idNumber}}</td>
+        <td>{{student2.name}}</td>
+        <td>{{student2.dateAdded}}</td>
+        <td>
+          <button type="button" class="btn btn-success">View</button>
+          <button type="button" class="btn btn-warning">Edit</button>
+          <button type="button" class="btn btn-danger">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
