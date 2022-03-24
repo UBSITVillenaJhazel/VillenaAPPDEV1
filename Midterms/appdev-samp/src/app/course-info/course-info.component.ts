@@ -13,11 +13,14 @@ export interface Student{
   styleUrls: ['./course-info.component.css']
 })
 export class CourseInfoComponent implements OnInit {
+  instructor='Erna-Kristi Martinez';
+  courseCode='APPDEV1';
+  courseDesc='Introduction to Application Development';
 
   students=[{value:'John Uno'},
             {value:'Ana Nen'},
             {value:'Zayn Malik'}]
-  students1='Elizabeth';
+  //students='Elizabeth';
 
   student: Student = {
     idNumber: '20189522',

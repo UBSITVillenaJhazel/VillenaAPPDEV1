@@ -1,11 +1,6 @@
-<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-    <button type="button" class="btn btn-primary"><!--School of Information Technology-->{{school}}</button>
-    <div class="btn-group" role="group">
-      <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-        <a class="dropdown-item" href="#"><!--BS in Computer Science-->{{prog1}}</a>
-        <a class="dropdown-item" href="#"><!--BS in Information Technology-->{{prog2}}</a>
-        <a class="dropdown-item" href="#"><!--BS in Computer Engineering-->{{prog3}}</a>
-      </div>
-    </div>
-  </div>
+<ul class="list-group">
+  <li class="list-group-item bg-primary">{{school}}</li>
+  <li routerLink='bsco-e' class="list-group-item list-group-item-action">{{prog1}}</li>
+  <li routerLink='bscs' class="list-group-item list-group-item-action">{{prog2}}</li>
+  <li routerLink='bsit' class="list-group-item list-group-item-action">{{prog3}}</li>
+</ul>
