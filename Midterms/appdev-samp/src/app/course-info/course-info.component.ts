@@ -16,6 +16,12 @@ export class CourseInfoComponent implements OnInit {
   instructor='Erna-Kristi Martinez';
   courseCode='APPDEV1';
   courseDesc='Introduction to Application Development';
+  serverStatus: string='offline';
+  isDiabled=true;
+
+  getServerStatus(){
+    return this.serverStatus;
+  }
 
   students=[{value:'John Uno'},
             {value:'Ana Nen'},

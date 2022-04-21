@@ -28,7 +28,7 @@ import { BsitComponent } from './Programs/bsit/bsit.component';
     LoginComponent,
     BSCoEComponent,
     BscsComponent,
-    BsitComponent
+    BsitComponent 
   ],
   imports: [
     BrowserModule,
@@ -52,6 +52,6 @@ import { BsitComponent } from './Programs/bsit/bsit.component';
   LoginComponent,
   BSCoEComponent,
   BscsComponent,
-  BsitComponent]
+  BsitComponent ]
 })
 export class AppModule { }
