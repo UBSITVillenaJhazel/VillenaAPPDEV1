@@ -1,1 +1,27 @@
-<p>view-lists works!</p>
+<div class="container">
+    <!--<div class="list-group" *ngFor="let item of items">
+        <a href="#" class="list-group-item list-group-item-action active">List of Products</a>
+        <a routerLink="#" class="list-group-item list-group-item-action">{{item.sname}}</a>
+        <a href="#" class="list-group-item list-group-item-action disabled">{{item.sprice}}</a>
+       </div>-->
+
+
+       <table class="table table-hover">
+           <thead>
+               <tr>
+                   <th scope="col">Name</th>
+                   <th scope="col">ID</th>
+                   <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-active" *ngFor="let item of items">
+                    <th scope="row">{{item.sname}}</th>
+                    <td>{{item.id}}</td>
+                    <td><a routerLink="viewdetails">View Details</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+</div>

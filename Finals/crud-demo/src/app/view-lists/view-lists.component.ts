@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Item } from '../item';
+import { ITEMS } from '../item-listings';
 
 @Component({
   selector: 'app-view-lists',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewListsComponent implements OnInit {
 
+  items: Item[] = [];
   constructor() { }
 
   ngOnInit(): void {
+    this.items = ITEMS;
   }
 
 }

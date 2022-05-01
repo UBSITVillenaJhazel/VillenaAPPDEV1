@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule} from '@angular/router';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+
 import { NavbarComponent } from './navbar/navbar.component';
 import { ViewListsComponent } from './view-lists/view-lists.component';
 import { FooterComponent } from './footer/footer.component';
@@ -29,9 +30,10 @@ import { NewItemsComponent } from './new-items/new-items.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot([])
+    RouterModule.forRoot([]) 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent]
 })
 export class AppModule { }

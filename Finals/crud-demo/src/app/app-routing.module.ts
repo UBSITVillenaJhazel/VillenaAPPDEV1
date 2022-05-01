@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { ContactSellerComponent } from './contact-seller/contact-seller.component';
 import { CreateNewComponent } from './create-new/create-new.component';
 import { EditItemComponent } from './edit-item/edit-item.component';
@@ -11,6 +12,7 @@ import { ViewListsComponent } from './view-lists/view-lists.component';
 const routes: Routes = [
   { path: '', redirectTo: 'ViewListsComponent', pathMatch: 'full'},
   { path: 'viewlists/:id', component: ViewListsComponent},
+  { path: 'viewlists', component: ViewListsComponent},
   { path: 'contactseller/:id', component: ContactSellerComponent},
   { path: 'edititem/:id', component: EditItemComponent},
   { path: 'viewdetails', component: ViewDetailsComponent},
