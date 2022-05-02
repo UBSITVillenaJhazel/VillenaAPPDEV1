@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Seller } from '../seller';
 import { SELLERS } from '../seller-listings';
+import { Item } from '../item';
+import { ITEMS } from '../item-listings';
 
 @Component({
   selector: 'app-contact-seller',
@@ -13,6 +15,10 @@ export class ContactSellerComponent implements OnInit {
 
   selectedSeller?: Seller;
 
+  items = ITEMS;
+
+  selectedItem?: Item;
+
   constructor(
     private route: ActivatedRoute,
   ) { }
@@ -20,6 +26,8 @@ export class ContactSellerComponent implements OnInit {
   ngOnInit(): void {
     const id=this.route.snapshot.paramMap.get('id');
     this.selectedSeller = SELLERS.find( selectedSeller => selectedSeller.id === id);
+    const id2=this.route.snapshot.paramMap.get('id');
+    this.selectedItem = ITEMS.find( selectedItem => selectedItem.id === id2);
   }
 
 }

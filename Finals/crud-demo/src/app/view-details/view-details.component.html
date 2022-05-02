@@ -1,12 +1,16 @@
-<div class="card text-white bg-primary mb-3" style="max-width: 20rem;" *ngIf="selectedItem">
-    <div class="card-header">Item ID: {{selectedItem.id}}</div>
+<div class="container">
+
+<div class="card text-white border-warning m-5" style="max-width: 60rem;" *ngIf="selectedItem">
+    <div class="card-header bg-warning">Snack ID: {{selectedItem.id}}</div>
     <div class="card-body">
-      <h4 class="card-title">Primary card title</h4>
       <p class="card-text">Name: {{ selectedItem.sname }}</p>
       <p class="card-text">Type: {{ selectedItem.type }}</p>
       <p class="card-text">Description: {{ selectedItem.sdesc }}</p>
-      <p class="card-text">Price: {{ selectedItem.sprice }}</p>
-
-      <a routerLink="/contactseller/{{selectedItem.id}}">Contact Seller </a>
+      <p class="card-text">Price: Php {{ selectedItem.sprice }}</p>
+      <diV class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <button type="button" class="btn btn-warning"  routerLink="/contactseller/{{selectedItem.id}}">ORDER to Seller</button>
+      </diV>
     </div>
   </div>
+
+</div>

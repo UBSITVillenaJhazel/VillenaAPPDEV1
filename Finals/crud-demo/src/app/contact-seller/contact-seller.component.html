@@ -1,10 +1,24 @@
-<div class="card text-white bg-primary mb-3" style="max-width: 20rem;" *ngIf="selectedSeller">
-    <div class="card-header">Contact Seller ID: {{selectedSeller.id}}</div>
-    <div class="card-body">
-      <h4 class="card-title">Primary card title</h4>
-      <p class="card-text">Name: {{ selectedSeller.fname }} {{ selectedSeller.lname }}</p>
-      <p class="card-text">Email: {{ selectedSeller.email }}</p>
+<div class="container">
 
-      <a routerLink="viewlists">Back </a>
+<div class="card text-white m-5 border-success" style="max-width: 60rem;">
+    <div class="card-header text-center"><h3>Make an Order</h3></div>
+    <div class="card-body">
+      <p class="card-text text-center" *ngIf="selectedSeller">Hello! {{selectedSeller.fname}} {{ selectedSeller.lname }}, </p>
+      <p class="card-text text-center" *ngIf="selectedItem">I would like to buy {{ selectedItem.sname }} from your store.</p>
+      <div>
+      <h6 class="text-center mt-5">ENTER YOUR DETAILS>></h6>
+      <div class="input-group mt-3">
+        <span class="input-group-text">First and last name</span>
+        <input type="text" aria-label="First name" class="form-control">
+        <input type="text" aria-label="Last name" class="form-control">
+      </div>
+      <div class="input-group mt-3">
+        <span class="input-group-text">Email</span>
+        <input type="text" aria-label="Email" class="form-control">
+      </div>
+    </div>
+
+      <a routerLink="/viewlists/" style="text-decoration: none;"><h5 class="mt-5 text-end">STORE</h5></a>
     </div>
   </div>
+</div>

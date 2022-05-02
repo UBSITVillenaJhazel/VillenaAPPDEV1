@@ -6,19 +6,21 @@
        </div>-->
 
 
-       <table class="table table-hover">
-           <thead>
+       <table class="table table-hover mt-5">
+           <thead class="table-secondary">
                <tr>
-                   <th scope="col">Name</th>
-                   <th scope="col">ID</th>
+                   <th scope="col">No.</th>
+                   <th scope="col">Snack</th>
+                   <th scope="col">Price</th>
                    <th scope="col">Actions</th>
                 </tr>
             </thead>
             <tbody>
                 <tr class="table-active" *ngFor="let item of items">
-                    <th scope="row">{{item.sname}}</th>
-                    <td>{{item.id}}</td>
-                    <td><a routerLink="/viewdetails/{{item.id}}">View Details</a></td>
+                    <th scope="row">{{item.id}}</th>
+                    <td>{{item.sname}}</td>
+                    <td>{{item.sprice}}</td>
+                    <td><button type="button" class="btn btn-outline-primary"><a routerLink="/viewdetails/{{item.id}}" style="text-decoration: none;">Snack it</a></button></td>
                 </tr>
             </tbody>
         </table>
