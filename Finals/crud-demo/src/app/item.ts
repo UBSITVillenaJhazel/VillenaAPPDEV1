@@ -1,5 +1,5 @@
 export interface Item{
-    id: number;
+    id: string;
     sname: string;
     sdesc: string;
     type: string;

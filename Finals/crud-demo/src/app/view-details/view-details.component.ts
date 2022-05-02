@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Item } from '../item';
+import { ITEMS } from '../item-listings';
 
 @Component({
   selector: 'app-view-details',
@@ -6,10 +9,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./view-details.component.css']
 })
 export class ViewDetailsComponent implements OnInit {
+  items = ITEMS;
 
-  constructor() { }
+  selectedItem?: Item;
+
+  constructor(
+    private route: ActivatedRoute,
+  ) { }
 
   ngOnInit(): void {
+    const id=this.route.snapshot.paramMap.get('id');
+    this.selectedItem = ITEMS.find( selectedItem => selectedItem.id === id);
+
   }
 
 }

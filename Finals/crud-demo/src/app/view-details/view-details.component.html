@@ -1,1 +1,12 @@
-<p>view-details works!</p>
+<div class="card text-white bg-primary mb-3" style="max-width: 20rem;" *ngIf="selectedItem">
+    <div class="card-header">Item ID: {{selectedItem.id}}</div>
+    <div class="card-body">
+      <h4 class="card-title">Primary card title</h4>
+      <p class="card-text">Name: {{ selectedItem.sname }}</p>
+      <p class="card-text">Type: {{ selectedItem.type }}</p>
+      <p class="card-text">Description: {{ selectedItem.sdesc }}</p>
+      <p class="card-text">Price: {{ selectedItem.sprice }}</p>
+
+      <a routerLink="/contactseller/{{selectedItem.id}}">Contact Seller </a>
+    </div>
+  </div>

@@ -18,7 +18,7 @@
                 <tr class="table-active" *ngFor="let item of items">
                     <th scope="row">{{item.sname}}</th>
                     <td>{{item.id}}</td>
-                    <td><a routerLink="viewdetails">View Details</a></td>
+                    <td><a routerLink="/viewdetails/{{item.id}}">View Details</a></td>
                 </tr>
             </tbody>
         </table>

@@ -1,1 +1,10 @@
-<p>contact-seller works!</p>
+<div class="card text-white bg-primary mb-3" style="max-width: 20rem;" *ngIf="selectedSeller">
+    <div class="card-header">Contact Seller ID: {{selectedSeller.id}}</div>
+    <div class="card-body">
+      <h4 class="card-title">Primary card title</h4>
+      <p class="card-text">Name: {{ selectedSeller.fname }} {{ selectedSeller.lname }}</p>
+      <p class="card-text">Email: {{ selectedSeller.email }}</p>
+
+      <a routerLink="viewlists">Back </a>
+    </div>
+  </div>

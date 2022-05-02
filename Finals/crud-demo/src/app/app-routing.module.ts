@@ -11,11 +11,10 @@ import { ViewListsComponent } from './view-lists/view-lists.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'ViewListsComponent', pathMatch: 'full'},
-  { path: 'viewlists/:id', component: ViewListsComponent},
   { path: 'viewlists', component: ViewListsComponent},
   { path: 'contactseller/:id', component: ContactSellerComponent},
   { path: 'edititem/:id', component: EditItemComponent},
-  { path: 'viewdetails', component: ViewDetailsComponent},
+  { path: 'viewdetails/:id', component: ViewDetailsComponent},
   { path: 'myitems', component: MyItemsComponent },
   { path: 'createitem', component: CreateNewComponent},
   { path: 'newitems', component: NewItemsComponent}
